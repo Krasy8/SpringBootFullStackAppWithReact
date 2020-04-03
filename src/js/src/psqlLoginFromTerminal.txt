@@ -1,0 +1,5 @@
+start docker
+docker exec -it demo-postgres /bin/bash
+psql -U postgres
+\l -> list all DBs
+\c amigoscodedemo -> connecting to amigoscodedemo
