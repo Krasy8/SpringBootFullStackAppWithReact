@@ -1,6 +1,6 @@
-spring:
-  profiles:
-    active: @spring.profiles.active@
+#spring:
+#  profiles:
+#    active: @spring.profiles.active@
 
 app:
   datasource:
@@ -8,3 +8,17 @@ app:
     username: postgres
     password: password
     pool-size: 30
+
+#spring:
+#  profiles:
+#    active: @spring.profiles.active@
+#
+#server:
+#  port: 5000
+#
+#app:
+#  datasource:
+#    jdbc-url: jdbc:postgresql://fullstackappdb.c3gixclxsyqd.eu-west-2.rds.amazonaws.com:5432/amigoscodedemo
+#    username: krasy8
+#    password: password
+#    pool-size: 30
