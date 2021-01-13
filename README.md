@@ -6,7 +6,7 @@
 
 ## Table of content
 
-- 🕹 [Play around with my app](#play-around-with-my-app-🕹)
+- 🕹 [Play around with my app](#play-around-with-my-app)
 
 - 🏗 [Built With](#built-with-🏗) 
 
@@ -18,7 +18,7 @@
 
 - 🙏🏻 [Acknowledgments](#acknowledgements-🙏🏻)
 
-## Play around with my app 🕹
+## Play around with my app
 
 [My app running on AWS](http://springbootwithreactapp-env.eba-zc8bgb6a.eu-west-2.elasticbeanstalk.com)
 
