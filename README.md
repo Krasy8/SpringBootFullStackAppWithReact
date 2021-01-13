@@ -6,7 +6,7 @@
 
 ## Table of content
 
-- 🕹 [Play around with my app](#play-around-with-my-app-🕹)
+- [Play around with my app](#play-around-with-my-app-🕹)
 
 - 🏗 [Built With](#built-with-🏗) 
 
