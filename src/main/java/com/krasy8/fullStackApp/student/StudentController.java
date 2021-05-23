@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,6 +84,7 @@ public class StudentController {
         eventMap.put("userLastName", studentToDelete.getLastName());
         eventMap.put("userEmail", studentToDelete.getEmail());
         eventMap.put("leavingDate", LocalDate.now().toString());
+        eventMap.put("leavingTime", LocalTime.now().toString());
 
         Unstructured unstructured = Unstructured.builder()
                 .eventData(new SelfDescribingJson(
