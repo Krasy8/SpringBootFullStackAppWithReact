@@ -22,6 +22,22 @@ import {
   notification,
   Popconfirm
 } from 'antd';
+import {
+  newTracker,
+  enableActivityTracking,
+  trackPageView
+} from '@snowplow/browser-tracker';
+
+newTracker('sp', '0.0.0.0:9090', {
+  appId: 'fullStackApp-frontend',
+});
+
+enableActivityTracking({
+  minimumVisitLength: 30,
+  heartbeatDelay: 10
+});
+
+trackPageView();
 
 
 const getIndicatorIcon = () => <Icon type="loading" style={{ fontSize: 24 }} spin />;

@@ -8,6 +8,9 @@ app:
     username: postgres
     password: password
     pool-size: 30
+#logging:
+#  level:
+#    ROOT: DEBUG
 
 #spring:
 #  profiles:

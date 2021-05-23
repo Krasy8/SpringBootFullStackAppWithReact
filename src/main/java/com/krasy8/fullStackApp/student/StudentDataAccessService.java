@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
 @Repository
 public class StudentDataAccessService {
 
@@ -32,10 +33,18 @@ public class StudentDataAccessService {
         return jdbcTemplate.query(sql, mapStudentRowMapper());
     }
 
+    Student findStudentById(UUID studentId) {
+        String sql = "" +
+                "SELECT student_id, first_name, last_name, email, gender FROM student WHERE student_id='" + studentId + "';";
+
+        return jdbcTemplate.queryForObject(sql, mapStudentRowMapper());
+    }
+
     int insertStudent(UUID studentId, Student student) {
         String sql = "" +
                 "INSERT INTO student (student_id, first_name, last_name, email, gender) " +
                 "VALUES(?, ?, ?, ?, ?::gender)";
+
         return jdbcTemplate.update(
                 sql,
                 studentId,
@@ -72,7 +81,7 @@ public class StudentDataAccessService {
                 "SELECT EXISTS (SELECT 1 FROM student WHERE email = ?)";
         return jdbcTemplate.queryForObject(
                 sql,
-                new Object[] {email},
+                new Object[]{email},
                 (resultSet, i) -> resultSet.getBoolean(1)
         );
     }
@@ -86,32 +95,32 @@ public class StudentDataAccessService {
 
         return jdbcTemplate.query(
                 sql,
-                new Object[] {studentId},
+                new Object[]{studentId},
                 mapStudentCoursesRowMapper());
     }
 
     private RowMapper<StudentCourse> mapStudentCoursesRowMapper() {
-        return (resultSet, i) -> {
-            return new StudentCourse(
-                    UUID.fromString(resultSet.getString("student_id")),
-                    UUID.fromString(resultSet.getString("course_id")),
-                    resultSet.getString("name"),
-                    resultSet.getString("description"),
-                    resultSet.getString("department"),
-                    resultSet.getString("teacher_name"),
-                    resultSet.getDate("start_date").toLocalDate(),
-                    resultSet.getDate("end_date").toLocalDate(),
-                    Optional.ofNullable(resultSet.getString("grade"))
-                            .map(Integer::parseInt)
-                            .orElse(null)
-            );
-        };
+        return (resultSet, i) -> new StudentCourse(
+                UUID.fromString(resultSet.getString("student_id")),
+                UUID.fromString(resultSet.getString("course_id")),
+                resultSet.getString("name"),
+                resultSet.getString("description"),
+                resultSet.getString("department"),
+                resultSet.getString("teacher_name"),
+                resultSet.getDate("start_date").toLocalDate(),
+                resultSet.getDate("end_date").toLocalDate(),
+                Optional.ofNullable(resultSet.getString("grade"))
+                        .map(Integer::parseInt)
+                        .orElse(null)
+        );
     }
 
     int deleteStudentById(UUID studentId) {
+
         String sql = "" +
                 "DELETE FROM student " +
                 "WHERE student_id = ?";
+
         return jdbcTemplate.update(sql, studentId);
     }
 

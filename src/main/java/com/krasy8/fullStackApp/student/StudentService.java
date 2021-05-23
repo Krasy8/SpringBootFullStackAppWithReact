@@ -73,6 +73,13 @@ public class StudentService {
     }
 
     void deleteStudent(UUID studentId) {
+
+
+
         studentDataAccessService.deleteStudentById(studentId);
+    }
+
+    public Student findStudent(UUID studentId) {
+       return studentDataAccessService.findStudentById(studentId);
     }
 }
