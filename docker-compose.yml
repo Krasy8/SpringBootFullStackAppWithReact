@@ -18,7 +18,6 @@ services:
       - 8088:8080
 
   snowplow-micro:
-#    container_name: sp-micro
     image: snowplow/snowplow-micro:1.1.1
     volumes:
       - ./snowplow/micro:/config
