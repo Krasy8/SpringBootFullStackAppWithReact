@@ -550,7 +550,7 @@ void deleteStudent(UUID studentId) {
 **Received by the collector**
    
   
-Isolated student data from the full deletedStudentEvent:  
+Extracted deleted student data from the full deletedStudentEvent:  
   
 ```
  "unstruct_event": {
