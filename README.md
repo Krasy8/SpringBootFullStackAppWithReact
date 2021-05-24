@@ -1,6 +1,8 @@
 # Spring Boot Full Stack App with Snowplow trackers  
   
-This is an experimental version of my app where I have implemented a few trackers, using Snowplow library. 
+This is an experimental version of my app where I have implemented a few trackers, using Snowplow library.  
+This version is not deployed to AWS yet.  
+If you want to go back to the master version of the project please click the [master](https://github.com/Krasy8/SpringBootFullStackAppWithReact)
 
 Please refer to [Snowplow docs](https://docs.snowplowanalytics.com) for full details about thier tracking service.  
   
