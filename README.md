@@ -15,6 +15,19 @@ Snowplow provides an extensive [tracker library](https://docs.snowplowanalytics.
 ### 1. Collector  
 
 To collect the data sent from my trackers I used [snowplow-micro](https://github.com/snowplow-incubator/snowplow-micro/), hosted on docker.  
+  
+I have added the below code to my docker-compose.yml file so the snowplow-micro container starts up together with other containers supporting my app:  
+  
+```
+snowplow-micro:
+    image: snowplow/snowplow-micro:1.1.1
+    volumes:
+      - ./snowplow/micro:/config
+    restart: always
+    ports:
+      - "9090:9090"
+    command: "--collector-config /config/micro.conf --iglu /config/iglu.json"
+```
 
 
 ### 2. JavaScript trackers (Browser tracker)  
