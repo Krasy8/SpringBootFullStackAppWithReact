@@ -10,7 +10,9 @@
 
 - 🏠 [Local install](#local-install)
 
-- 🏗 [Built With](#built-with) 
+- 🏗 [Built With](#built-with)  
+
+- 🕵🏻‍♂️ [Tracking with Snowplow](#tracking-with-snowplow)
 
 - ➕ [Contributing](#contributing)
 
@@ -27,10 +29,10 @@
 Feel free to play around with my app using the link above.  
 You will be able to perform all CRUD operations:
 
-C - **create** a student using the "Add new student+" button at the bottom of the screen  
-R - **read** all the information about students added to the list  
-U - **update** a student using blue "Edit" button on the right-hand side in the column "Action"  
-D - **delete** a student using red "Delete" button on the right-hand side in the column "Action"  
+**C** - **create** a student using the "Add new student+" button at the bottom of the screen  
+**R** - **read** all the information about students added to the list  
+**U** - **update** a student using blue "Edit" button on the right-hand side in the column "Action"  
+**D** - **delete** a student using red "Delete" button on the right-hand side in the column "Action"  
 
 ## Local install  
 
@@ -83,7 +85,13 @@ When your prerequisite are completed, open your terminal and follow the steps be
    
 
 ## Built With
- [![Java Badge](https://img.shields.io/badge/-Java-007396?style=for-the-badge&labelColor=white&logo=java&logoColor=007396)](https://www.java.com/en/) [![Spring Badge](https://img.shields.io/badge/-Spring-6DB33F?style=for-the-badge&labelColor=white&logo=spring&logoColor=6DB33F)](https://spring.io) [![Postgres Badge](https://img.shields.io/badge/-Postgres-336791?style=for-the-badge&labelColor=white&logo=postgresql&logoColor=336791)](https://www.postgresql.org) [![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&labelColor=white&logo=docker&logoColor=2496ED)](https://www.docker.com) [![Javascript Badge](https://img.shields.io/badge/-Javascript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) [![React Badge](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DAFB)](https://reactjs.org) [![AWS Badge](https://img.shields.io/badge/-Amazon_Web_Services-232F3E?style=for-the-badge&labelColor=FF9900&logo=Amazon-AWS&logoColor=232F3E)](https://aws.amazon.com)
+ [![Java Badge](https://img.shields.io/badge/-Java-007396?style=for-the-badge&labelColor=white&logo=java&logoColor=007396)](https://www.java.com/en/) [![Spring Badge](https://img.shields.io/badge/-Spring-6DB33F?style=for-the-badge&labelColor=white&logo=spring&logoColor=6DB33F)](https://spring.io) [![Postgres Badge](https://img.shields.io/badge/-Postgres-336791?style=for-the-badge&labelColor=white&logo=postgresql&logoColor=336791)](https://www.postgresql.org) [![Docker Badge](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&labelColor=white&logo=docker&logoColor=2496ED)](https://www.docker.com) [![Javascript Badge](https://img.shields.io/badge/-Javascript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) [![React Badge](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DAFB)](https://reactjs.org) [![AWS Badge](https://img.shields.io/badge/-Amazon_Web_Services-232F3E?style=for-the-badge&labelColor=FF9900&logo=Amazon-AWS&logoColor=232F3E)](https://aws.amazon.com)  
+ 
+ 
+## Tracking with Snowplow  
+  
+I have created a separate version of my app where I experimented with Snowplow trackers.  
+Please follow the link to a separate branch of this repository called [**'snowplow'**](https://github.com/Krasy8/SpringBootFullStackAppWithReact/tree/snowplow) dedicated to sp trackers implementation.
 
 ## Contributing
 
