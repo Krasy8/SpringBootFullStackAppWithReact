@@ -118,4 +118,6 @@ I have built this demo project to showcase my abilities as a software developer.
 [Amigoscode](https://amigoscode.com/p/full-stack-spring-boot-react) - This is my main inspiration and guide for the project. 
 A huge thumbs up for Nelson - the founding father of Amigoscode👍.
 
-[Ant Design](https://ant.design) - A UI Design Language and React UI library, which I used for my UI components.
+[Ant Design](https://ant.design) - A UI Design Language and React UI library, which I used for my UI components.  
+  
+[Snowplow](https://snowplowanalytics.com) - A powerfull and very customisable behavioral data management platform. 
