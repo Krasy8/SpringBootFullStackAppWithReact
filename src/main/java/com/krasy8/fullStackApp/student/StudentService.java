@@ -90,9 +90,8 @@ public class StudentService {
         // delete the student
         studentDataAccessService.deleteStudentById(studentId);
 
-        //send the event
+        // send the event
         sendDeletedStudentEvent(deletedStudentEvent);
-
     }
 
     private Unstructured buildDeletedStudentEvent(UUID studentId) {
