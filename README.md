@@ -50,10 +50,7 @@ When your prerequisite are completed, open your terminal and follow the steps be
 
    `git clone https://github.com/Krasy8/SpringBootFullStackAppWithReact.git`  
 
-2. You will need a couple of docker containers (postgres and adminer) running to support the app.  
-   Cd into the root folder of the project where you can find the docker-compose.yml file and run  
-     
-   `docker compose up`  
+2. Make sure your Docker Desktop is running  
      
 3. Now you can start the app by either running:  
    
