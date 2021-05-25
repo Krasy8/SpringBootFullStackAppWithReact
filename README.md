@@ -77,7 +77,8 @@ When your prerequisite are completed, open your terminal and follow the steps be
    
    and running:  
    
-   `npm start`  
+   `npm install`  
+   `npm start`   
    
 5. Open http://localhost:3000/ in your browser and you should see the UI. You can start adding students!  
    
