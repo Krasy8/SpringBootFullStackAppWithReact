@@ -69,18 +69,9 @@ When your prerequisite are completed, open your terminal and follow the steps be
    
    `java -jar target/fullStackApp-0.0.1-SNAPSHOT.jar`  
 
-4. The backend of the app should be running now on port 8080, all there is left to do is to start the front end on port 3000 by:  
-   
-   cd inside the "js" folder  
-   
-   `cd src/js`  
-   
-   and running:  
-   
-   `npm install`  
-   `npm start`   
-   
-5. Open http://localhost:3000/ in your browser and you should see the UI. You can start adding students!  
+4. Open your browser and enter the address:  
+  
+    http://localhost:8080
    
    Have fun! 🥳  
    
