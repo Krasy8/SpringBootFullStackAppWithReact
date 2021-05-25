@@ -75,10 +75,15 @@
             <version>5.2.4.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.dkanejs.maven.plugins</groupId>
+            <artifactId>docker-compose-maven-plugin</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <profiles>
-
         <profile>
             <id>build-frontend</id>
             <activation>
@@ -86,6 +91,24 @@
             </activation>
             <build>
                 <plugins>
+                    <plugin>
+                        <groupId>com.dkanejs.maven.plugins</groupId>
+                        <artifactId>docker-compose-maven-plugin</artifactId>
+                        <version>4.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>up</id>
+                                <phase>validate</phase>
+                                <goals>
+                                    <goal>up</goal>
+                                </goals>
+                                <configuration>
+                                    <composeFile>${project.basedir}/docker-compose.yml</composeFile>
+                                    <detachedMode>true</detachedMode>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
                     <plugin>
                         <groupId>com.github.eirslett</groupId>
                         <artifactId>frontend-maven-plugin</artifactId>
@@ -246,9 +269,7 @@
                 </plugins>
             </build>
             <properties>
-                <spring.profiles.active>
-                    demo
-                </spring.profiles.active>
+                <spring.profiles.active>demo</spring.profiles.active>
             </properties>
         </profile>
     </profiles>
